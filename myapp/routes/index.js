@@ -6,8 +6,8 @@ var router = express.Router();
   res.render('index', { title: 'Express' });
 });*/
 
-router.get('/home', function(req, res, next) {
-  res.render('welcome', { title: 'User' });
+router.get('/', function(req, res, next) {
+  res.render('index', { title: 'User' });
 });
 
 router.get('/home/question1', function(req, res, next) {
