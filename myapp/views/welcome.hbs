@@ -18,23 +18,32 @@
   }
 
   .container-fluid {
-    padding-top: 250px;
-    padding-bottom: 250px;
+    margin-top: 100px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 70%;
+    
 }
   .container-fluid2 {
     position: absolute;
     bottom: 0;
     width: 100%;
-    padding-top: 40px;
-    padding-bottom: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
   }
   .bg-1 { 
-      background-color: #1abc9c; /* Green */
+      background-color: #f01716;
       color: #ffffff;
   }
   .bg-2 { 
       background-color: #474e5d; /* Dark Blue */
       color: #ffffff;
+  }
+    .button-format{
+      font-size: 20px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      color: black;
   }
   </style>
 </head>
@@ -44,9 +53,10 @@
   <img src="./../images/profilePicture.PNG" class="img-circle" alt="Bird" width="350" height="350">
 </div>
 
-<div class="container-fluid2 bg-2 text-center">
-  <h3>START ASSESSMENT >>></h3>
-</div>
+{{!<div class="container-fluid2 bg-2 text-center">}}
+  {{!<h3>START ASSESSMENT >>></h3>}}
+<button onclick="location.href = 'http://localhost:3000/welcome/question1';" type="button" class="btn btn-dark button-format container-fluid">START ASSESSMENT</button>
+{{!</div>}}
 
 
 </body>
