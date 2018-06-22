@@ -7,7 +7,11 @@ var router = express.Router();
 });*/
 
 router.get('/', function(req, res, next) {
+<<<<<<< HEAD
   res.render('index', { title: 'Welcome'});
+=======
+  res.render('index', { title: 'User' });
+>>>>>>> 7dd737e0f67907b6278c31f7760c65a3c6571f3b
 });
 
 router.get('/welcome', function(req, res, next) {
