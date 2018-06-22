@@ -23,6 +23,9 @@ router.get('/welcome/question1/question2', function(req, res, next) {
 router.get('/welcome/question1/question2/question3', function(req, res, next) {
   res.render('question3', { title: 'Question3' });
 });
+router.get('/dashboard', function(req, res, next) {
+  res.render('dashboard', { title: 'Question3' });
+});
 
 
 module.exports = router;
