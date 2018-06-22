@@ -31,11 +31,16 @@ html,body {
   top: 0; right: 0; left: 0; bottom: 0;
   margin: auto;
   color:white;
+  font-family: "Times New Roman", Times, serif;
+  text-transform: capitalize;
+  font-weight: bold;
+  text-align: center;
+  /*font-size: 30pt;*/
 }
 .loader .image {
   width: 100px;
   height: 160px;
-  font-size: 40px;
+  font-size: 20px;
   text-align: center;
   transform-origin: bottom center;
   animation: 3s rotate infinite;
@@ -106,15 +111,15 @@ $(document).ready(function() {
 
 function changeImage(counter) {
   var images = [
-    '<i class="fa fa-fighter-jet"></i>',
-    '<i class="fa fa-gamepad"></i>',
-    '<i class="fa fa-headphones"></i>',
-    '<i class="fa fa-cubes"></i>',
-    '<i class="fa fa-paw"></i>',
-    '<i class="fa fa-rocket"></i>',
-    '<i class="fa fa-ticket"></i>',
-    '<i class="fa fa-pie-chart"></i>',
-    '<i class="fa fa-codepen"></i>'
+    '<img src="./../images/regular/star.svg">',
+    '<img src="./../images/regular/lightbulb.svg">',
+    '<img src="./../images/regular/paper-plane.svg">',
+    '<img src="./../images/regular/sun.svg">',
+    '<img src="./../images/regular/user-circle.svg">',
+    '<img src="./../images/regular/moon.svg">',
+    '<img src="./../images/regular/heart.svg">',
+    '<img src="./../images/regular/hourglass.svg">',
+    '<img src="./../images/regular/grin.svg">'
   ];
 
   $(".loader .image").html(""+ images[counter] +"");
@@ -139,11 +144,14 @@ function loading(){
 
 </script>
 
+
  <div class="loader" >
+     <h1 style=" text-align:center"> Moneta </h1>
   <div class="image">
-    <i class="fa fa-codepen"></i>
+    <img src="./../images/regular/lightbulb.svg">
   </div>
   <span></span>
+  
 </div>
 
 </body>
